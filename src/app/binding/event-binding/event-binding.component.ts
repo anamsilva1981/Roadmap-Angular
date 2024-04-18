@@ -7,13 +7,10 @@ import { Component } from '@angular/core';
 
     <button (click)=eventBinding()> Event binding</button>
     <hr>
-    <br>
     <button (click)="eventBinding2('Deu certo')"> Event binding com parametro </button>
     <hr>
-    <br>
     <button (click)="evento($event)" >Evento </button>
     <hr>
-    <br>
     <div (mousemove)="mousemoveTest($event)" style="background: red; width: 300px; height: 300px"></div>
     <p>Position X </p> {{ position.x }}
     <p>Position Y </p> {{ position.y }}
