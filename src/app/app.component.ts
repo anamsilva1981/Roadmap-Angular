@@ -3,7 +3,10 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  template: '<router-outlet></router-outlet>'
+  template: `
+    <app-ngonchanges title="Olá Mundo" ></app-ngonchanges>
+    <router-outlet/>
+  `
 
 })
 export class AppComponent implements OnInit {

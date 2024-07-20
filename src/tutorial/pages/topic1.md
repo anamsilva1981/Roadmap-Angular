@@ -27,5 +27,10 @@ export class ExemploComponent implements OnInit {
     }, 5000)
 }
 
+### NgOnChanges()
+Este evento é executado sempre que um valor de um controle de entrada dentro do componente é alterado. 
+Sempre que um componente recebe um dado do @Input() ou seja externo o ngOnChanges() é invocado
+
+
 
 [Voltar ao Sumário](../index.md)

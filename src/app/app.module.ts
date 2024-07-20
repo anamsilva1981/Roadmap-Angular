@@ -4,7 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { NgOnInitComponent } from './ciclo-de-vida/ng-on-init/ng-on-init.component';
+import { NgonchangesComponent } from './ciclo-de-vida/ngonchanges/ngonchanges.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +15,7 @@ import { NgOnInitComponent } from './ciclo-de-vida/ng-on-init/ng-on-init.compone
     AppRoutingModule,
     ReactiveFormsModule,
     FormsModule,
-    NgOnInitComponent
+    NgonchangesComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
