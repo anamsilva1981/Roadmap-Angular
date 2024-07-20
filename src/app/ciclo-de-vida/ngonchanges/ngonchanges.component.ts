@@ -1,4 +1,4 @@
-import { Component, Input, OnChanges, OnInit, SimpleChanges } from '@angular/core';
+import { Component, Input, OnChanges, OnDestroy, OnInit, SimpleChanges } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -8,7 +8,7 @@ import { CommonModule } from '@angular/common';
   templateUrl: './ngonchanges.component.html',
   styleUrls: ['./ngonchanges.component.scss']
 })
-export class NgonchangesComponent implements OnInit, OnChanges {
+export class NgonchangesComponent implements OnInit, OnChanges, OnDestroy {
   
   @Input() public title: string = 'Bem vindo';
 
@@ -16,6 +16,9 @@ export class NgonchangesComponent implements OnInit, OnChanges {
 
   public ngOnChanges(): void {
     console.log('Foi alterado com sucesso através do onChanges');
-    
+  }
+
+  public ngOnDestroy(): void {
+    console.log('Componente NgonchangesComponent destruido')
   }
 }
