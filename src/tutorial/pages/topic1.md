@@ -1,4 +1,9 @@
-# RoadmapAngular
+---
+layout: default
+title: Configuração Inicial do GitHub
+---
+
+# Ciclo de Vida do Angular
 
 ## constructor(){}
 É Executado primeiro e antes da execução de qualquer outro evento do ciclo de vida do componente.
@@ -14,3 +19,5 @@ export class ExemploComponent implements OnInit {
     this.message = 'Olá, mundo!';
   }
 }
+
+[Voltar ao Sumário](../index.md)

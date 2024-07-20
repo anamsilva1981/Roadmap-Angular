@@ -3,20 +3,15 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { TwoWayBindingComponent } from './binding/two-way-binding/two-way-binding.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { DataBindingComponent } from './binding/data-binding/data-binding.component';
-import { EventBindingComponent } from './binding/event-binding/event-binding.component';
-import { NgIfComponent } from './diretivas/ng-if/ng-if.component';
+import { CicloDeVidaComponent } from './ciclo-de-vida/ciclo-de-vida.component';
+import { TittleComponent } from './ciclo-de-vida/tittle/tittle.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TwoWayBindingComponent,
-    DataBindingComponent,
-    EventBindingComponent,
-    NgIfComponent
-
+    CicloDeVidaComponent,
+    TittleComponent
   ],
   imports: [
     BrowserModule,
