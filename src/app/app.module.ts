@@ -1,3 +1,4 @@
+import { SharedModule } from './shared/shared.module';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -14,6 +15,7 @@ import { CicloDeVidaComponent } from './ciclo-de-vida/ciclo-de-vida.component';
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
+    SharedModule,
     FormsModule,
     CicloDeVidaComponent
   ],

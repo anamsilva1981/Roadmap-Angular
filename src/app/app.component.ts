@@ -9,6 +9,7 @@ import { AfterContentChecked, AfterContentInit, AfterViewChecked, AfterViewInit,
     <button (click)="adicionar()">Adicionar</button>
     <!-- <app-ngonchanges title="Olá Mundo" ></app-ngonchanges> -->
     <app-ciclodevida *ngIf="destruir" ></app-ciclodevida>
+    <app-new-component></app-new-component>
     <router-outlet/>
   `
 
