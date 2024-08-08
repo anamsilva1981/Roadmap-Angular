@@ -10,11 +10,27 @@ import { AfterContentChecked, AfterContentInit, AfterViewChecked, AfterViewInit,
     <!-- <app-ngonchanges title="Olá Mundo" ></app-ngonchanges> -->
     <app-ciclodevida *ngIf="destruir" ></app-ciclodevida>
     <app-new-component></app-new-component>
+
+    <!-- Inicio do @Input() -->
+    <app-input
+      [contador]="addValue"
+    ></app-input>
+
+    <button (click)="add()">Add</button>
+    <!-- Fim do @Input() -->
     <router-outlet/>
   `
 
 })
 export class AppComponent implements OnInit, DoCheck, AfterContentInit, AfterViewInit, AfterViewChecked, AfterContentChecked  {
+
+  // Inicio do @Input()
+  public addValue: number = 0;
+
+  public add(){
+    this.addValue += 1;
+  }
+  // Fim do @Input()
 
   public valor: number = 1;
   public destruir: boolean = true;
